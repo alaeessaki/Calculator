@@ -1,0 +1,52 @@
+$num-size:40px; 
+$st-size: 35px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+    .calculator{
+        width: 100%;
+        height: 100%;
+
+        .screen{
+            width: 89.9%;
+            height: 100%;
+            padding: 5%;
+            background-color: rgb(0, 0, 71);
+            border: 1px solid black;
+            color: white;
+            font-size: $st-size;
+        }
+        .buttons{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+            .btn{
+                padding: 4%;
+                font-size: $num-size;
+                border: 1px solid black;
+            }
+            .btn-yellow{
+                background-color: orange;
+                color: white;
+            }
+            .btn-grey{
+                background-color: rgb(236, 236, 236);
+            }
+            .btn-equal{
+                background-color: green;
+            }
+            .btn-clear{
+                background-color: red;
+            }   
+        }
+    }
+}
+

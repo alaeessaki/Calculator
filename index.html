@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="calculator">
+        <form>
+            <input type="text" name="" id="form" class="screen">
+        </form>
+        <div class="buttons">
+            <!-- yellow -->
+            <button type="button" class="btn btn-yellow" data-num="*" onclick="checkThepross(this)">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/" onclick="checkThepross(this)">/</button>
+            <button type="button" class="btn btn-yellow" data-num="-" onclick="checkThepross(this)">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+" onclick="checkThepross(this)">+</button>
+            <!-- grey buttons -->
+            <button type="button" class="btn btn-grey" data-num="." onclick="getNum(this)">.</button>
+            <button type="button" class="btn btn-grey" data-num="9" onclick="getNum(this)">9</button>
+            <button type="button" class="btn btn-grey" data-num="8" onclick="getNum(this)">8</button>
+            <button type="button" class="btn btn-grey" data-num="7" onclick="getNum(this)">7</button>
+            <button type="button" class="btn btn-grey" data-num="6" onclick="getNum(this)">6</button>
+            <button type="button" class="btn btn-grey" data-num="5" onclick="getNum(this)">5</button>
+            <button type="button" class="btn btn-grey" data-num="4" onclick="getNum(this)">4</button>
+            <button type="button" class="btn btn-grey" data-num="3" onclick="getNum(this)">3</button>
+            <button type="button" class="btn btn-grey" data-num="2" onclick="getNum(this)">2</button>
+            <button type="button" class="btn btn-grey" data-num="1" onclick="getNum(this)">1</button>
+            <button type="button" class="btn btn-grey" data-num="0" onclick="getNum(this)">0</button>
+            <button type="button" class="btn btn-equal btn-grey" onclick = "resultf()">=</button>
+            <button type="button" class="btn btn-clear btn-grey"  onclick="clearf()">C</button>
+        
+        
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
